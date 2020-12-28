@@ -1,4 +1,5 @@
 import React from 'react';
+
 import 'rsuite/dist/styles/rsuite-default.css';
 import './styles/main.scss';
 import { Switch, Route } from 'react-router';
@@ -12,8 +13,8 @@ function App() {
       <Route>
         <SignIn path="/signin" />
       </Route>
-      <PrivateRoute>
-        <Home path="/home" />
+      <PrivateRoute path="/">
+        <Home />
       </PrivateRoute>
     </Switch>
   );
